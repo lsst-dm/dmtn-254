@@ -52,6 +52,7 @@ The CSCs are deployed on top of Kubernetes using ArgoCD.
 .. _Kubernetes: https://kubernetes.io/docs/home/
 .. _ArgoCD: https://argo-cd.readthedocs.io/en/stable/
 
+.. add diagram here
 
 
 Information Flows
