@@ -52,6 +52,11 @@ The CSCs are deployed on top of Kubernetes using ArgoCD.
 .. _Kubernetes: https://kubernetes.io/docs/home/
 .. _ArgoCD: https://argo-cd.readthedocs.io/en/stable/
 
+.. figure:: /_static/Summit\ -\ Overview.pdf
+   :name: fig-summit-overview
+   :alt: Overview of the Summit showing components interacting via the SAL message bus
+
+   Overview of the Summit showing components interacting via the SAL message bus.
 
 
 Information Flows
@@ -67,6 +72,11 @@ Typically, procedures are executed as scripts submitted to the ScriptQueue CSC.
 The Scheduler can automatically submit scripts to the ScriptQueue.
 But custom procedures are executed via Jupyter notebooks running on the Summit RSP.
 
+.. figure:: /_static/Summit\ -\ Commands.pdf
+   :name: fig-summit-commands
+   :alt: Information flow for operator commands
+
+   Information flow for operator commands.
 
 CSC monitoring
 --------------
@@ -84,6 +94,11 @@ Alarms can be automatically distributed to support teams via the `Squadcast`_ on
 .. _Watcher: https://ts-watcher.lsst.io/
 .. _Squadcast: https://www.squadcast.com/
 
+.. figure:: /_static/Summit\ -\ Monitoring.pdf
+   :name: fig-summit-monitoring
+   :alt: Information flow for operator monitoring
+
+   Information flow for operator monitoring.
 
 Science data monitoring
 -----------------------
@@ -115,6 +130,11 @@ If a workflow graph system were used instead, none of the processing could start
 The Rapid Analysis system has requirements that have been defined by the FAFF team to process science images and metadata and display images, plots, and metrics based on them.
 We are currently deciding whether it will be better to build this within the RubinTV framework, the Prompt Processing framework, or a combination of both.
 
+.. figure:: /_static/Summit\ -\ Science\ Data.pdf
+   :name: fig-summit-science-data
+   :alt: Information flow for science data
+
+   Information flow for science data.
 
 Science data archive and processing
 -----------------------------------
@@ -134,6 +154,12 @@ The only other automated USDF-to-Summit data transfer will be for combined calib
 
 .. _nextVisit event: https://ts-xml.lsst.io/sal_interfaces/ScriptQueue.html#nextvisit
 .. _Rucio: https://rucio.cern.ch/documentation/
+
+.. figure:: /_static/Summit\ -\ USDF\ Science.pdf
+   :name: fig-summit-usdf-science-data
+   :alt: Information flow for science data to the USDF
+
+   Information flow for science data to the USDF.
 
 Science metadata
 ----------------
@@ -170,6 +196,12 @@ Another internal database maintains information about each image taken.
 This exposure database will be merged with the CDB.
 
 Log files from all services running at the Summit are (or will be) collected by a central IT-provided service that will allow querying and detection of problems.
+
+.. figure:: /_static/Summit\ -\ USDF\ Metadata.pdf
+   :name: fig-summit-usdf-science-metadata
+   :alt: Information flow for science metadata to the USDF
+
+   Information flow for science metadata to the USDF.
 
 .. Make in-text citations with: :cite:`bibkey`.
 .. Uncomment to use citations
